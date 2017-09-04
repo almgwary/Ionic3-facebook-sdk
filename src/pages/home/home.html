@@ -5,6 +5,17 @@
 </ion-header>
 
 <ion-content padding>
+  <h2>Welcome to Ionic Facebook integration </h2>
+
+  <button ion-button (click)="facebookLogin()" *ngIf="!isLoggedIn">FaceBook Login</button>
+
+  <button ion-button (click)="facebookLogout()" *ngIf="isLoggedIn">FaceBook Logout</button>
+
+
   <p>
+    login data : {{    data | json  }}
   </p>
+
+
+
 </ion-content>
